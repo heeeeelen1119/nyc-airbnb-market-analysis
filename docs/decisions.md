@@ -30,3 +30,12 @@ Generated with `python src/clean.py`.
 | Missing last reviews | 0 | Retained and labelled missing, not imputed. |
 | Missing host names | 8 | Retained; names are not treated as unique host IDs. |
 | Parsed review-date range | 2019-01-01 to 2019-07-09 | Parsed with the observed month-name date format. |
+
+## Phase 4: database loading
+
+- PostgreSQL load was unavailable: `(psycopg.OperationalError) connection is bad: connection to server at "127.0.0.1", port 5432 failed: Operation not permitted`
+- Used a local DuckDB database (`data/processed/airbnb.duckdb`) for executable SQL validation; PostgreSQL schema and loader remain provided for normal use.
+
+## Execution notes
+
+- The initial figure-generation run aborted twice because the sandbox could not write the default Matplotlib/font cache. The analysis script is rerun with writable temporary cache paths before treating figure generation as unavailable.
