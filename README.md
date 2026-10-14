@@ -39,7 +39,22 @@ Raw source files are not committed. See [data/README.md](data/README.md) for the
 
 ## Key findings
 
-TBD (filled after analysis)
+- The cleaned analytical dataset contains **25,202** valid listings. The mean nightly price is **$141.82**, while the median is **$105.00**, confirming a right-skewed distribution.
+- Manhattan has the highest borough median nightly price (**$149**), compared with **$95** in Brooklyn, **$70** in Queens, **$71** in Staten Island, and **$65** in the Bronx. With at least 30 listings per group, Manhattan Tribeca entire homes/apartments have the highest median (**$350**); Brooklyn Bedford-Stuyvesant shared rooms have the lowest (**$35**).
+- **68.73%** of listings have a latest review in June or July 2019. This is review recency—not occupancy—and the top 10 host names account for **5.88%** of listings, an approximate measure because names are not unique host IDs.
+- In the descriptive log-price model (25,192 listings), room type, borough, and simple description signals explain **53.0%** of log-price variation. Relative to entire homes/apartments, private rooms show an estimated **53.6% lower** price association and shared rooms **71.3% lower**, conditional on the included covariates; these are associations, not causal effects.
+
+## Figures
+
+![Median nightly price by borough and room type](reports/figures/median_price_by_borough_room_type.svg)
+
+![Listings by month of latest review](reports/figures/last_review_by_month.svg)
+
+The source code generates all figures from the processed table. The residual plot in `reports/figures/` is included as a model diagnostic.
+
+## Dashboard
+
+The local Streamlit dashboard supplies filters for borough, room type, and nightly price, plus views for price distribution, borough comparison, neighborhood ranking, latest-review recency, and regression coefficients. Run it with `streamlit run dashboard/app.py` after cleaning and analysis.
 
 ## Repository structure
 
@@ -71,6 +86,7 @@ python src/validate.py
 pytest
 docker compose up -d db
 python src/load_db.py
+python src/analysis.py
 streamlit run dashboard/app.py
 ```
 
