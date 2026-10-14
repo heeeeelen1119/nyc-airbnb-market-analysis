@@ -1,0 +1,36 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              log_price   R-squared:                       0.530
+Model:                            OLS   Adj. R-squared:                  0.530
+Method:                 Least Squares   F-statistic:                     2370.
+Date:                Tue, 13 Oct 2026   Prob (F-statistic):               0.00
+Time:                        20:12:06   Log-Likelihood:                -15955.
+No. Observations:               25192   AIC:                         3.194e+04
+Df Residuals:                   25179   BIC:                         3.204e+04
+Df Model:                          12                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+Intercept                        4.5726      0.020    226.062      0.000       4.533       4.612
+C(room_type)[T.Private room]    -0.7689      0.006   -124.903      0.000      -0.781      -0.757
+C(room_type)[T.Shared room]     -1.2476      0.019    -64.580      0.000      -1.286      -1.210
+C(borough)[T.Brooklyn]           0.2523      0.018     14.120      0.000       0.217       0.287
+C(borough)[T.Manhattan]          0.5772      0.018     32.217      0.000       0.542       0.612
+C(borough)[T.Queens]             0.1180      0.019      6.229      0.000       0.081       0.155
+C(borough)[T.Staten Island]     -0.0352      0.033     -1.072      0.284      -0.100       0.029
+mentions_private                -0.0531      0.008     -6.475      0.000      -0.069      -0.037
+mentions_view                    0.0920      0.025      3.713      0.000       0.043       0.141
+mentions_subway                 -0.1254      0.018     -6.813      0.000      -0.162      -0.089
+mentions_cozy                   -0.1398      0.009    -15.208      0.000      -0.158      -0.122
+mentions_spacious               -0.0418      0.011     -3.686      0.000      -0.064      -0.020
+description_length               0.0048      0.000     17.223      0.000       0.004       0.005
+==============================================================================
+Omnibus:                     3818.211   Durbin-Watson:                   1.919
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            12075.611
+Skew:                           0.783   Prob(JB):                         0.00
+Kurtosis:                       6.008   Cond. No.                         578.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

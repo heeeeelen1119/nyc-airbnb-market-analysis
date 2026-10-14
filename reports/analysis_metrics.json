@@ -1,0 +1,16 @@
+{
+  "listings": 25202,
+  "mean_price": 141.82,
+  "median_price": 105.0,
+  "top_price_group": "Manhattan, Tribeca \u2014 Entire home/apt",
+  "top_group_median_price": 350.0,
+  "bottom_price_group": "Brooklyn, Bedford-Stuyvesant \u2014 Shared room",
+  "bottom_group_median_price": 35.0,
+  "minimum_group_listing_count": 30,
+  "recent_review_share_pct": 68.73,
+  "top_ten_host_name_share_pct": 5.88,
+  "model_r_squared": 0.53,
+  "model_n": 25192,
+  "residual_mean": 0.0,
+  "residual_std": 0.456
+}
