@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680">
+<rect width="1100" height="680" fill="#ffffff"/>
+<text x="55" y="48" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#172554">Median nightly price by borough and room type</text>
+<text x="55" y="76" font-family="Arial, sans-serif" font-size="14" fill="#475569"></text>
+<line x1="300" y1="110" x2="300" y2="620" stroke="#94a3b8"/>
+<text x="288" y="135.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Manhattan — Entire home/apt</text>
+<rect x="300" y="115.0" width="680.0" height="28.0" rx="3" fill="#2563eb"/>
+<text x="990.0" y="135.2" font-family="Arial" font-size="12" fill="#0f172a">195.0</text>
+<text x="288" y="168.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Brooklyn — Entire home/apt</text>
+<rect x="300" y="148.0" width="505.6" height="28.0" rx="3" fill="#2563eb"/>
+<text x="815.6" y="168.2" font-family="Arial" font-size="12" fill="#0f172a">145.0</text>
+<text x="288" y="201.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Queens — Entire home/apt</text>
+<rect x="300" y="181.0" width="418.5" height="28.0" rx="3" fill="#2563eb"/>
+<text x="728.5" y="201.2" font-family="Arial" font-size="12" fill="#0f172a">120.0</text>
+<text x="288" y="234.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Bronx — Entire home/apt</text>
+<rect x="300" y="214.0" width="348.7" height="28.0" rx="3" fill="#2563eb"/>
+<text x="658.7" y="234.2" font-family="Arial" font-size="12" fill="#0f172a">100.0</text>
+<text x="288" y="267.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Staten Island — Entire home/apt</text>
+<rect x="300" y="247.0" width="348.7" height="28.0" rx="3" fill="#2563eb"/>
+<text x="658.7" y="267.2" font-family="Arial" font-size="12" fill="#0f172a">100.0</text>
+<text x="288" y="300.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Manhattan — Private room</text>
+<rect x="300" y="280.0" width="313.8" height="28.0" rx="3" fill="#2563eb"/>
+<text x="623.8" y="300.2" font-family="Arial" font-size="12" fill="#0f172a">90.0</text>
+<text x="288" y="333.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Brooklyn — Private room</text>
+<rect x="300" y="313.0" width="226.7" height="28.0" rx="3" fill="#2563eb"/>
+<text x="536.7" y="333.2" font-family="Arial" font-size="12" fill="#0f172a">65.0</text>
+<text x="288" y="366.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Manhattan — Shared room</text>
+<rect x="300" y="346.0" width="226.7" height="28.0" rx="3" fill="#2563eb"/>
+<text x="536.7" y="366.2" font-family="Arial" font-size="12" fill="#0f172a">65.0</text>
+<text x="288" y="399.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Queens — Private room</text>
+<rect x="300" y="379.0" width="202.3" height="28.0" rx="3" fill="#2563eb"/>
+<text x="512.3" y="399.2" font-family="Arial" font-size="12" fill="#0f172a">58.0</text>
+<text x="288" y="432.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Bronx — Private room</text>
+<rect x="300" y="412.0" width="174.4" height="28.0" rx="3" fill="#2563eb"/>
+<text x="484.4" y="432.2" font-family="Arial" font-size="12" fill="#0f172a">50.0</text>
+<text x="288" y="465.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Staten Island — Private room</text>
+<rect x="300" y="445.0" width="174.4" height="28.0" rx="3" fill="#2563eb"/>
+<text x="484.4" y="465.2" font-family="Arial" font-size="12" fill="#0f172a">50.0</text>
+<text x="288" y="498.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Brooklyn — Shared room</text>
+<rect x="300" y="478.0" width="122.1" height="28.0" rx="3" fill="#2563eb"/>
+<text x="432.1" y="498.2" font-family="Arial" font-size="12" fill="#0f172a">35.0</text>
+<text x="288" y="531.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Queens — Shared room</text>
+<rect x="300" y="511.0" width="122.1" height="28.0" rx="3" fill="#2563eb"/>
+<text x="432.1" y="531.2" font-family="Arial" font-size="12" fill="#0f172a">35.0</text>
+<text x="288" y="564.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Bronx — Shared room</text>
+<rect x="300" y="544.0" width="97.6" height="28.0" rx="3" fill="#2563eb"/>
+<text x="407.6" y="564.2" font-family="Arial" font-size="12" fill="#0f172a">28.0</text>
+<text x="288" y="597.2" text-anchor="end" font-family="Arial" font-size="12" fill="#334155">Staten Island — Shared room</text>
+<rect x="300" y="577.0" width="75.0" height="28.0" rx="3" fill="#2563eb"/>
+<text x="385.0" y="597.2" font-family="Arial" font-size="12" fill="#0f172a">21.5</text>
+<text x="640" y="655" text-anchor="middle" font-family="Arial" font-size="14" fill="#475569">Median price (USD per night)</text>
+</svg>

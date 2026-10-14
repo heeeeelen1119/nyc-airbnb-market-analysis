@@ -39,3 +39,4 @@ Generated with `python src/clean.py`.
 ## Execution notes
 
 - The initial figure-generation run aborted twice because the sandbox could not write the default Matplotlib/font cache. The analysis script is rerun with writable temporary cache paths before treating figure generation as unavailable.
+- The dashboard server successfully opened a listening socket when run with the permitted local-server capability, but this sandbox's client/network namespace could not connect to that socket and the browser-control connection could not initialize. The app source is present and the startup command was attempted; real dashboard screenshots could not be captured in this environment.
