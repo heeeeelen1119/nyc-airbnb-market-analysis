@@ -1,0 +1,16 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.env
+
+# Third-party raw inputs and locally generated row-level outputs
+data/raw/
+data/processed/*.parquet
+data/processed/*.csv
+
+# Local app and database artifacts
+.streamlit/secrets.toml
+postgres_data/
