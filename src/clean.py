@@ -116,8 +116,14 @@ if __name__ == "__main__":
     decisions = DECISIONS_PATH.read_text(encoding="utf-8")
     marker = "\n## Phase 2: cleaning\n"
     if marker in decisions:
-        decisions = decisions.split(marker, 1)[0].rstrip() + "\n"
+        before, after = decisions.split(marker, 1)
+        next_section = after.find("\n## ")
+        suffix = after[next_section:] if next_section >= 0 else "\n"
+        decisions = before.rstrip() + "\n"
+    else:
+        suffix = "\n"
     DECISIONS_PATH.write_text(
-        decisions + "\n## Phase 2: cleaning\n\n" + log.replace("# Cleaning log\n\n", ""), encoding="utf-8"
+        decisions + "\n## Phase 2: cleaning\n\n" + log.replace("# Cleaning log\n\n", "").rstrip() + suffix,
+        encoding="utf-8",
     )
     print(f"Wrote {len(cleaned_frame):,} cleaned listings to {PROCESSED_DIR}")

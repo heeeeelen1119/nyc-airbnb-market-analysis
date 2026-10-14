@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -150,7 +151,8 @@ def run_analysis(frame: pd.DataFrame) -> dict[str, object]:
         "p_value": model.pvalues.values,
     })
     _save_table(regression, "regression_coefficients")
-    (REPORTS / "regression_summary.txt").write_text(model.summary().as_text(), encoding="utf-8")
+    summary_text = re.sub(r"^Time:.*$", "Time:       omitted for reproducibility", model.summary().as_text(), flags=re.MULTILINE)
+    (REPORTS / "regression_summary.txt").write_text(summary_text, encoding="utf-8")
 
     plot_data = market.sort_values("median_price", ascending=False)
     _bar_chart(FIGURES / "median_price_by_borough_room_type.svg", "Median nightly price by borough and room type", (plot_data.borough + " — " + plot_data.room_type).tolist(), plot_data.median_price.tolist(), "Median price (USD per night)")
